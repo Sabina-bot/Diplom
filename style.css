@@ -1,0 +1,230 @@
+
+body {
+	background-color: #f0f0f0;
+
+}
+
+.none {
+	display: none;
+}
+
+
+
+@keyframes zoom {
+        0% {
+            transform: scale(0);
+        }
+        100% {
+            transform: scale(1);
+            opacity: 0;
+        }
+    }
+
+.preloader {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 2100;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .preloader span {
+        display: block;
+        height: 65px;
+        width: 65px;
+        border-radius: 50%;
+        background-color: #f7a716;
+        animation: zoom 1s ease infinite;
+    }
+
+
+.navbar {
+  padding: 14px 35px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+}
+
+
+.navbar-brand {
+	letter-spacing: -1px;
+	font-size: 26px;
+	font-weight: 700;
+	color: #000;
+}
+
+.navbar-brand i {
+	color: red;
+}
+
+.navbar-brand:hover {
+	color: #000;
+}
+
+
+.main {
+	margin-top: 60px;
+}
+
+.main-container {
+	margin: 0px 140px;
+}
+
+
+
+
+.pogodnik-card {
+	background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../img/bg2.webp') no-repeat;
+	background-position: : center center;
+	background-size: cover;
+	padding: 23px 25px;
+	color: #fff;
+	border-radius: 18px;
+	margin-bottom: 22px;
+	transition: 0.2s;
+	cursor: pointer;
+	-webkit-box-shadow: 0px 10px 19px -3px rgba(34, 60, 80, 0.35);
+	-moz-box-shadow: 0px 10px 19px -3px rgba(34, 60, 80, 0.35);
+	box-shadow: 0px 10px 19px -3px rgba(34, 60, 80, 0.35);
+}
+
+.pogodnik-card-primer {
+	background: url('../img/bg.jpg') no-repeat;
+	background-position: : center center;
+	background-size: cover;
+	padding: 23px 25px;
+	color: #fff;
+	border-radius: 18px;
+	margin-bottom: 22px;
+	transition: 0.3s all !important;
+	cursor: pointer;
+	-webkit-box-shadow: 0px 10px 19px -3px rgba(34, 60, 80, 0.35);
+	-moz-box-shadow: 0px 10px 19px -3px rgba(34, 60, 80, 0.35);
+	box-shadow: 0px 10px 19px -3px rgba(34, 60, 80, 0.35);
+}
+
+.pogodnik-card-primer:hover {
+	background: linear-gradient(rgb(50,205,50), rgb(50,205,50))
+}	
+
+.pogodnik-card:hover {
+	background: linear-gradient(rgb(50,205,50), rgb(50,205,50))
+}
+
+.pogodnik-card-primer i {
+	font-size: 40px;
+	color: #ffe41c;
+}
+
+.pogodnik-card-title {
+	font-size: 16.6px;
+	opacity: 85%;
+}
+
+.pogodnik-card-title-primer {
+	font-size: 16.6px;
+	opacity: 85%;
+}
+
+.pogoda-gradus {
+	font-size: 40px;
+	font-weight: 700;
+}
+
+.pogoda-gradus-primer {
+	font-size: 40px;
+	font-weight: 700;
+}
+
+
+.pogodnik-card-desc p {
+	font-style: italic;
+	opacity: 86%;
+	font-size: 19px;
+}
+
+.pogodnik-card-desc-primer p {
+	font-style: italic;
+	opacity: 86%;
+	font-size: 19px;
+}
+
+
+
+.search-box {
+	margin-top: 55px;
+}
+
+.search-box-title {
+	font-size: 23.3px;
+	letter-spacing: -1px;
+	font-weight: 590;
+}
+
+
+.search-form {
+	background-color: #fff;
+	padding: 30px 40px;
+}
+
+.search-box button {
+	background-color: #089bff;
+	transition: 0.2s;
+	color: #fff;
+}
+
+.search-box button:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+
+
+
+.about-moscow, .about-sankt, .about-novosib {
+	margin-top: 33px;
+}
+
+.about-moscow a, .about-novosib a, .about-sankt a {
+	color: #000;
+	letter-spacing: -1px;
+}
+
+		
+.about-image-top {
+	max-height: 600px;
+	max-width: 850px;
+	height: auto;
+	width: 100%;
+}
+
+.about-title {
+	color: #f7a716;
+	font-size: 35px;
+	font-weight: 700;
+}
+
+.about-text {
+	opacity: 85%;
+}
+
+
+
+@media only screen and (max-width: 910px){
+	.main-container {
+		margin: 0px 66px;
+	}
+}
+
+@media only screen and (max-width: 520px){
+	.main-container {
+		margin: 0px 20px;
+	}
+}
